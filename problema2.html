@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numero = parseInt(prompt("Ingrese un número"));
+        let respuesta;
+
+        if (numero % 3 === 0 && numero % 5 === 0) {
+            respuesta = "Tu número es divisible por 3 y 5";
+        } else if (numero % 3 === 0) {
+            respuesta = "Tu número es divisible por 3";
+        } else if (numero % 5 === 0) {
+            respuesta = "Tu número es divisible por 5";
+        } else {
+            respuesta = "Tu número no es divisible por 3 ni 5";
+        }
+
+        alert(respuesta);
+    </script>
+</body>
+</html>
